@@ -1,0 +1,72 @@
+body {
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+}
+
+.reviews-summary-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 80px 120px;
+}
+
+.reviews-summary {
+    display: flex;
+    gap: 120px;
+}
+
+.reviews-overview-title {
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.reviews-overview-description {
+    margin-top: 10px;
+    color: #797878;
+}
+
+.reviews-overview {
+    flex: 1;
+}
+
+.rating-items {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin: 17px 0;
+    align-items: center;
+}
+
+.rating-item {
+    width: 375px;
+    padding: 12px 0;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 6px;
+    color: hsl(300, 43%, 22%);
+    padding-right: 20px;
+}
+
+.rating-items .rating-item:first-child {
+    align-self: flex-start;
+}
+
+.rating-items .rating-item:last-child {
+    align-self: flex-end;
+}
+
+.review-items {
+    display: flex;
+    gap: 30px;
+}
+
+.starts {
+    display: inline-block;
+    background-image: url(../images/icon-star.svg);
+    width: 100px;
+    height: 16px;
+    background-repeat: space;
+    vertical-align: middle;
+    margin: 0 20px;
+}
