@@ -58,12 +58,9 @@ body {
 
 .review-items {
     display: flex;
-    justify-items: center;
-    align-items: center;
     gap: 30px;
     color: hsl(0, 0%, 100%);
     margin-top: 15px;
-    height: 295px;
 }
 
 .starts {
@@ -123,10 +120,12 @@ body {
     font-weight: 500;
 }
 
-.review-item:first-child{
-    align-self: flex-start;
+.review-item:nth-child(2) {
+    position: relative;
+    top: 15px;
 }
 
-.review-item:last-child{
-    align-self: flex-end;
+.review-item:last-child {
+    position: relative;
+    top: 25px;
 }
