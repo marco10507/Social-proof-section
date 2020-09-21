@@ -28,6 +28,7 @@ body {
 
 .reviews-overview {
     flex: 1;
+    text-align: center;
 }
 
 .rating-items {
@@ -82,15 +83,15 @@ body {
     margin-right: 20px;
 }
 
-.colton-picture{
+.colton-picture {
     background-image: url(../images/image-colton.jpg);
 }
 
-.irene-picture{
+.irene-picture {
     background-image: url(../images/image-irene.jpg);
 }
 
-.anna-picture{
+.anna-picture {
     background-image: url(../images/image-anne.jpg);
 }
 
@@ -128,4 +129,51 @@ body {
 .review-item:last-child {
     position: relative;
     top: 25px;
+}
+
+@media screen and (max-width: 1000px) {
+    .reviews-summary {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .reviews-summary-container {
+        margin: 50px 40px;
+    }
+
+    .reviews-overview-description {
+        margin-top: 30px;
+    }
+
+    .rating-items .rating-item:first-child {
+        align-self: unset;
+    }
+
+    .rating-items .rating-item:last-child {
+        align-self: unset;
+    }
+
+    .rating-item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .review-item:nth-child(2) {
+        position: unset;
+        top: unset;
+    }
+
+    .review-item:last-child {
+        position: unset;
+        top: unset;
+    }
+
+    .review-items {
+        flex-direction: column;
+        margin-top: 0;
+    }
 }
