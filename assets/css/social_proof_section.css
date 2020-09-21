@@ -7,7 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    margin: 80px 120px;
+    margin: 110px 110px;
 }
 
 .reviews-summary {
@@ -58,7 +58,12 @@ body {
 
 .review-items {
     display: flex;
+    justify-items: center;
+    align-items: center;
     gap: 30px;
+    color: hsl(0, 0%, 100%);
+    margin-top: 15px;
+    height: 295px;
 }
 
 .starts {
@@ -69,4 +74,59 @@ body {
     background-repeat: space;
     vertical-align: middle;
     margin: 0 20px;
+}
+
+.customer-picture {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.colton-picture{
+    background-image: url(../images/image-colton.jpg);
+}
+
+.irene-picture{
+    background-image: url(../images/image-irene.jpg);
+}
+
+.anna-picture{
+    background-image: url(../images/image-anne.jpg);
+}
+
+.review-item {
+    flex: 1;
+    padding: 40px 30px;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+}
+
+.customer-picture {
+    float: left;
+}
+
+.type-of-customer {
+    color: hsl(333, 80%, 67%);
+    margin-top: 6px;
+}
+
+.customer-review {
+    clear: both;
+    line-height: 22px;
+    margin-top: 40px;
+}
+
+.customer-full-name {
+    font-weight: 500;
+}
+
+.review-item:first-child{
+    align-self: flex-start;
+}
+
+.review-item:last-child{
+    align-self: flex-end;
 }
